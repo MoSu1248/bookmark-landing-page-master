@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Bookmark landing page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+
+<!-- Site Header -->
+<header class="site-header">
+  <div class="header-container">
+    <img class="header-img" src="./images/logo-bookmark.svg" alt="">
+    <nav class="nav-header">
+      <ul class="nav-links">
+        <li><a class="nav-link" href="#features">Features</a></li>
+        <li><a class="nav-link" href="#pricing">Pricing</a></li>
+        <li><a class="nav-link" href="#contact">Contact</a></li>
+        <li><a class="header-login-btn login nav-link" href="#">Login</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  
+    <section class="hero-section">
+        <div class="background-shapeS"></div>
+
+        <div class="container">
+          <div class="hero-text">
+            <h2>A Simple Bookmark Manager</h2>
+            <p class="paragraph-grey">
+              A clean and simple interface to organize your favourite websites.
+              Open a new browser tab and see your sites load instantly. Try it
+              for free.
+            </p>
+            <div class="cta-buttons">
+              <a href="#" class="btn chrome-btn">Get it on Chrome</a>
+              <a href="#" class="btn firefox-btn">Get it on Firefox</a>
+            </div>
+          </div>
+          <div class="hero-image">
+            <img src="./images/illustration-hero.svg" alt="Illustration of browser tab" />
+          </div>
+        </div>
+    </section>
+
+    <section class="features-section">
+      <h2 class="features-section_header">Features</h2>
+      <p class="paragraph-grey">
+        Our aim is to make it quick and easy for you to access your favourite websites.
+        Your bookmarks sync between your devices so you can access them on the go.
+      </p>
+      <div class="feature-tabs">
+        <button value="Bookmark" class="active feature-btn">Simple Bookmarking</button>
+        <button value="Intelligent" class="feature-btn">Speedy Searching</button>
+        <button value="Share" class="feature-btn">Easy Sharing</button>
+      </div>
+
+      <div class="background-shape"></div>
+
+      <article class="article-container" id="Bookmark">
+          <img src="./images/illustration-features-tab-1.svg" alt="" class="article-container_img">
+        <div class="article-container_info">
+          <h2 class="article-container_header">Bookmark in one click</h2>
+          <p class="paragraph-grey">
+            Organize your bookmarks however you like. Our simple drag-and-drop interface
+            gives you complete control over how you manage your favourite sites.
+          </p>
+          <a class="btn" href="">More Info</a>
+        </div>
+      </article>
+
+      <article class="article-container hidden" id="Intelligent">
+
+        <img src="./images/illustration-features-tab-2.svg" alt="" class="article-container_img">
+
+        <div class="article-container_info">
+        <h2 class="article-container_header">Intelligent search</h2>
+
+        <p class="paragraph-grey">
+            Our powerful search feature will help you find saved sites in no time at all.
+            No need to trawl through all of your bookmarks.
+        </p>
+        <a class="btn" href="">More Info</a>
+       </div>
+      </article>
+
+      <article class="article-container hidden" id="Share">
+
+        <img src="./images/illustration-features-tab-3.svg" alt="" class="article-container_img">
+
+        <div class="article-container_info">
+        <h2 class="article-container_header">Share your bookmarks</h2>
+
+        <p class="paragraph-grey">
+            Our powerful search feature will help you find saved sites in no time at all.
+            No need to trawl through all of your bookmarks.
+            
+        </p>
+        <a class="btn" href="">More Info</a>
+       </div>
+      </article>
+
+    </section>
+  
+    <section class="download-section">
+      <div class="download-section_header">
+        <h2>Download the extension</h2>
+        <p>
+          We've got more browsers in the pipeline. Please do let us know if you've
+          got a favourite you'd like us to prioritize.
+        </p>
+      </div>
+      <div class="download-section_cards">
+        <article class="download-section_card card_1">
+          <h3>Add to Chrome</h3>
+          <p>Minimum version 62</p>
+          <a href="">Add & Install Extension</a>
+        </article>
+        <article class="download-section_card card_2">
+          <h3>Add to Firefox</h3>
+          <p>Minimum version 55</p>
+          <a href="">Add & Install Extension</a>
+        </article>
+        <article class="download-section_card card_3">
+          <h3>Add to Opera</h3>
+          <p>Minimum version 46</p>
+          <a href="">Add & Install Extension</a>
+        </article>
+      </div>
+    </section>
+  
+    <section class="faq">
+        <div class="container">
+          <h2>Frequently Asked Questions</h2>
+          <p>
+            Here are some of our FAQs. If you have any other questions you'd like answered please feel free to email us.
+          </p>
+
+          <details>
+            <summary>What is Bookmark?</summary>
+            <p>Explanation text goes here...</p>
+          </details>
+          <details open>
+            <summary>How can I request a new browser?</summary>
+            <p>Explanation text goes here...</p>
+          </details>
+          <details>
+            <summary>Is there a mobile app?</summary>
+            <p>Explanation text goes here...</p>
+          </details>
+          <details>
+            <summary>What about other Chromium browsers?</summary>
+            <p>Explanation text goes here...</p>
+          </details>
+
+          <a href="#" class="btn">More Info</a>
+        </div>
+    </section>
+  
+  
+</main>
+  
+<footer>
+      <section class="newsletter">
+        <div class="newsletter-container">
+          <h2 class="footer">35,000+ already joined</h2>
+          <h3 class="newsletter-heading">
+            Stay up-to-date with what we're doing
+            Contact Us
+          </h3>
+          <form>
+            <input type="email" placeholder="example@email.com" required />
+            <button type="submit">Contact Us</button>
+          </form>
+        </div>
+      </section>
+      <div class="footer-nav">
+        <nav>
+          <ul>
+            <li><a href="">Features</a></li>
+            <li><a href="">Pricing</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </nav>
+         <div class="socials">
+              <!-- Social icons -->
+         </div>
+      </div>
+</footer>
+  
+<script>
+
+// DOM MANIPULATION
+const featureBtns = document.querySelectorAll('.feature-btn')
+const featureSection = document.querySelectorAll('.article-container')
+
+// FEATURE SECTION INTERACTIONS
+featureBtns.forEach(featureBtn =>{
+  featureBtn.addEventListener('click', (e) =>{
+    e.preventDefault(); 
+
+    featureBtns.forEach(btns =>{btns.classList.remove('active');})
+    featureSection.forEach(hideSections =>{hideSections.classList.add('hidden')})
+
+    featureSection.forEach(section=>{
+      if (section.id === featureBtn.value) {
+        section.classList.remove('hidden')
+        featureBtn.classList.add('active')
+      }
+    })
+  })
+})
+
+
+</script>
+
+</body>
+</html>

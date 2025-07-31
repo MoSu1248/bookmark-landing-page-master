@@ -1,0 +1,283 @@
+:root {
+  /*Primary Colors*/
+  --Blue600: hsl(231, 69%, 60%);
+  --Red400: hsl(0, 94%, 66%);
+  /* Neutral Colors*/
+  --white:#ffffff;
+  --Grey50: hsl(0, 0%, 97%);
+  --Grey100: hsla(0, 0%, 80%, 0.671);
+  --grey-text:hsla(0, 0%, 47%, 0.726);
+  --Blue950: hsl(229, 31%, 21%);
+  /*Typography*/
+  --font-size-paragraph: 18px;
+  --font-family-paragraph:"Rubik", sans-serif;
+  --font-weight-400: 400;
+  --font-weight-500: 500;
+}
+
+/*GLOBAL*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  font-family: var(--font-family-paragraph);
+  background-color: var(--white);
+}
+
+.paragraph-grey {
+  font-size: var(--font-size-paragraph);
+  font-weight: var(--font-weight-400);
+  color: var(--grey-text);
+  width: 50%;
+}
+
+/*HEADER SECTION*/
+.site-header {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.site-header .header-container {
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+}
+.site-header .header-img {
+  height: 1.5rem;
+}
+
+.nav-header .nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+.nav-header .nav-links .nav-link {
+  text-decoration: none;
+  margin-right: 2.5rem;
+  color: var(--Blue950);
+}
+.nav-header .nav-links .nav-link:hover {
+  color: var(--Red400);
+}
+.nav-header .nav-links .header-login-btn {
+  border: 2px solid var(--Blue950);
+  padding: 0.5rem 1.8rem;
+  border-radius: 5px;
+}
+.nav-header .nav-links .header-login-btn:hover {
+  border: 2px solid var(--Red400);
+}
+
+/*MAIN-START*/
+/* HERO SECTION*/
+.hero-section {
+  height: 90vh;
+  width: 100%;
+}
+.hero-section .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 90%;
+  margin-left: 10%;
+  z-index: 1;
+}
+.hero-section .container .hero-image {
+  width: 50%;
+}
+.hero-section .background-shapeS {
+  position: absolute;
+  border-bottom-left-radius: 150px;
+  right: 0;
+  width: 40rem;
+  height: 20rem;
+  background-color: var(--Blue600);
+  z-index: -1;
+  margin-top: 22rem;
+}
+
+.hero-text {
+  padding: 2rem 0rem;
+  padding-left: 2.5%;
+  width: 50%;
+}
+.hero-text h2 {
+  margin-bottom: 2rem;
+  font-weight: var(--font-weight-500);
+  color: var(--Blue950);
+  font-size: 4rem;
+  width: 80%;
+}
+.hero-text .cta-buttons {
+  padding: 2rem;
+  padding-left: 0;
+  text-align: left;
+  margin-top: 1rem;
+}
+.hero-text .cta-buttons .btn {
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: var(--font-weight-500);
+  transition: 0.3s ease;
+  border: 2px solid transparent;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.hero-text .cta-buttons .btn:hover {
+  padding: 1rem 1.5rem;
+  transition: 0.3s ease;
+}
+.hero-text .cta-buttons .chrome-btn {
+  color: var(--Grey50);
+  background-color: var(--Blue600);
+}
+.hero-text .cta-buttons .chrome-btn:hover {
+  background-color: var(--Grey50);
+  color: var(--Blue600);
+  border: 2px solid var(--Blue600);
+}
+.hero-text .cta-buttons .firefox-btn {
+  color: var(--Blue950);
+  background-color: var(--Grey50);
+  margin-left: 1rem;
+}
+.hero-text .cta-buttons .firefox-btn:hover {
+  border: 2px solid var(--Blue950);
+}
+
+/*FEATURES SECTION*/
+.features-section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.features-section .features-section_header {
+  color: var(--Blue950);
+  font-weight: var(--font-weight-500);
+  margin-top: 3rem;
+}
+.features-section .paragraph-grey {
+  width: 28%;
+  text-align: center;
+  margin-top: 2rem;
+}
+.features-section .feature-tabs {
+  margin-top: 4rem;
+  display: flex;
+  gap: 0;
+}
+.features-section .feature-tabs button {
+  background-color: transparent;
+  border: none;
+  padding: 1rem 4rem;
+  min-width: 20%;
+  margin: 0;
+  cursor: pointer;
+  border-bottom: 1px solid var(--Grey100);
+  color: var(--grey-text);
+  font-family: var(--font-family-paragraph);
+  font-weight: var(--font-weight-500);
+}
+.features-section .feature-tabs button:hover {
+  border-bottom: 2px solid red;
+  color: var(--Blue950);
+}
+.features-section .feature-tabs button.active {
+  border-bottom: 2px solid red;
+  box-shadow: 0 0 -3 0 red;
+  color: var(--Blue950);
+}
+.features-section .hidden {
+  display: none;
+}
+.features-section .display {
+  display: block;
+}
+
+.background-shape {
+  position: absolute;
+  left: 0;
+  width: 58rem;
+  margin-right: 10rem;
+  height: 17rem;
+  background-color: var(--Blue600);
+  border-bottom-right-radius: 150px;
+  z-index: 1;
+  transform: translate(-10%, 20%);
+  margin-top: 32rem;
+}
+
+.article-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  padding: 5rem 2rem;
+  width: 90%;
+  max-width: 70rem;
+  margin: 0 auto;
+  z-index: 2;
+  min-height: 60vh;
+}
+.article-container img {
+  min-width: 30rem;
+  max-width: 30rem;
+  max-height: 30rem;
+  min-height: 22rem;
+}
+.article-container .article-container_info {
+  height: 100%;
+  padding: 3rem;
+}
+.article-container .article-container_info .article-container_header {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: var(--Blue950);
+  font-weight: var(--font-weight-500);
+}
+.article-container .article-container_info .paragraph-grey {
+  width: 100%;
+  margin-bottom: 2rem;
+  text-align: left;
+  min-height: 30%;
+}
+.article-container .article-container_info .btn {
+  background-color: var(--Blue600);
+  color: white;
+  padding: 0.6rem 2rem;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-weight: var(--font-weight-500);
+  text-decoration: none;
+  border: 2px solid transparent;
+}
+.article-container .article-container_info .btn:hover {
+  background-color: var(--Grey50);
+  color: var(--Blue600);
+  border: 2px solid var(--Blue600);
+  padding: 0.8rem 2rem;
+  transition: 0.3s ease;
+}
+
+/*DOWNLOADS SECTION*/
+.download-section {
+  height: 100vh;
+}
+/*FAQ SECTION*/
+/*MAIN-END*/
+/*FOOTER-SECTION*//*# sourceMappingURL=style.css.map */

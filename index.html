@@ -116,23 +116,26 @@
     <section class="download-section">
       <div class="download-section_header">
         <h2>Download the extension</h2>
-        <p>
+        <p class="paragraph-grey">
           We've got more browsers in the pipeline. Please do let us know if you've
           got a favourite you'd like us to prioritize.
         </p>
       </div>
       <div class="download-section_cards">
         <article class="download-section_card card_1">
+          <img src="./images/logo-chrome.svg" alt="">
           <h3>Add to Chrome</h3>
           <p>Minimum version 62</p>
           <a href="">Add & Install Extension</a>
         </article>
         <article class="download-section_card card_2">
+          <img src="./images/logo-firefox.svg" alt="">
           <h3>Add to Firefox</h3>
           <p>Minimum version 55</p>
           <a href="">Add & Install Extension</a>
         </article>
         <article class="download-section_card card_3">
+          <img src="./images/logo-opera.svg" alt="">
           <h3>Add to Opera</h3>
           <p>Minimum version 46</p>
           <a href="">Add & Install Extension</a>
@@ -140,27 +143,29 @@
       </div>
     </section>
   
-    <section class="faq">
-        <div class="container">
-          <h2>Frequently Asked Questions</h2>
-          <p>
-            Here are some of our FAQs. If you have any other questions you'd like answered please feel free to email us.
-          </p>
-
+    <section class="faq-section">
+      <div class="faq-section_header">
+        <h2>Frequently Asked Questions</h2>
+        <p class="paragraph-grey">
+          Here are some of our FAQs. If you have any other questions you'd like answered please feel free to email us.
+        </p>
+      </div>
+      
+      <div class="faqs-container">
           <details>
-            <summary>What is Bookmark?</summary>
+            <summary>What is Bookmark? <img src="./images/icon-arrow.svg" alt=""></summary>
             <p>Explanation text goes here...</p>
           </details>
           <details open>
-            <summary>How can I request a new browser?</summary>
+            <summary>How can I request a new browser? <img src="./images/icon-arrow.svg" alt=""></summary>
             <p>Explanation text goes here...</p>
           </details>
           <details>
-            <summary>Is there a mobile app?</summary>
+            <summary>Is there a mobile app? <img src="./images/icon-arrow.svg" alt=""></summary>
             <p>Explanation text goes here...</p>
           </details>
           <details>
-            <summary>What about other Chromium browsers?</summary>
+            <summary>What about other Chromium browsers? <img src="./images/icon-arrow.svg" alt=""></summary>
             <p>Explanation text goes here...</p>
           </details>
 
@@ -168,24 +173,24 @@
         </div>
     </section>
   
-  
 </main>
   
-<footer>
+<footer class="footer-section">
       <section class="newsletter">
         <div class="newsletter-container">
           <h2 class="footer">35,000+ already joined</h2>
           <h3 class="newsletter-heading">
             Stay up-to-date with what we're doing
-            Contact Us
           </h3>
           <form>
-            <input type="email" placeholder="example@email.com" required />
-            <button type="submit">Contact Us</button>
+            <input type="email" placeholder="example@email.com" required class="email-input"/>
+            <button type="submit" class="contact-btn">Contact Us</button>
           </form>
         </div>
       </section>
-      <div class="footer-nav">
+      <div class="footer-links">
+        <img src="./images/logo-bookmark.svg" alt="" class="footer-logo"  style="fill: red;">
+        
         <nav>
           <ul>
             <li><a href="">Features</a></li>
@@ -194,11 +199,12 @@
           </ul>
         </nav>
          <div class="socials">
-              <!-- Social icons -->
+              <img src="./images/icon-facebook.svg" alt="">
+              <img src="./images/icon-twitter.svg" alt="">
          </div>
       </div>
 </footer>
-  
+
 <script>
 
 // DOM MANIPULATION
